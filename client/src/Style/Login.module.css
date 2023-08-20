@@ -1,0 +1,94 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(3, 45, 65), rgb(13, 2, 51));
+    width: 100%;
+    min-height: 100vh;
+}
+
+.formContainer {
+    background-color: rgba(255, 255, 255, 0.781);
+    padding: 10px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 50%;
+
+}
+
+.formContainer h2 {
+    font-size: 24px;
+    font-family: Tahoma;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.formContainer form .inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    position: relative;
+}
+
+.formContainer form .inputGroup input {
+    padding: 10px 4px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(29, 28, 28, 0.404);
+    color: rgba(0, 0, 0, 0.568);
+    background: transparent;
+
+}
+
+.formContainer form .inputGroup label {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.767);
+    font-family: Tahoma;
+    position: absolute;
+    top: 0;
+    letter-spacing: 1px;
+    transition: .4s ease-in-out;
+}
+
+.formContainer form .inputGroup input:focus~label,
+.formContainer form .inputGroup input:valid~label {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.884);
+    top: -18px;
+}
+
+.formContainer form .inputGroup input:focus,
+.formContainer form .inputGroup input:valid {
+    border-color: rgb(24, 23, 23);
+}
+
+.formContainer form .inputGroup .submitButton {
+
+    border: 1px solid rgba(0, 0, 0, 0.411);
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.836);
+    color: white;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+.formContainer form .inputGroup .submitButton:hover {
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+.createAccount {
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 13px;
+
+}
+
+@media (max-width : 529px) {
+    .formContainer {
+        width: 80%;
+    }
+}
